@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Practice</title>
+</head>
+<body>
+
+  <button onclick="
+    console.log(`Cart quantity: ${cartCounter}`);
+    ">
+    Show quantity
+  </button>
+  
+  <button onclick="
+    cartCounter++;
+    console.log(cartCounter);
+    ">Add to Cart
+  </button>
+  <button onclick="
+  cartCounter += 2;
+  console.log(cartCounter);
+  ">
+    +2
+  </button>
+  <button onclick="
+  cartCounter += 3;
+  console.log(cartCounter);
+  ">
+    +3
+  </button>
+  <button onclick="
+  cartCounter = 0;
+  console.log(cartCounter);
+  ">
+    Reset Cart
+  </button>
+
+
+  <script>
+    let cartCounter = 0;
+  </script>
+</body>
+</html>
