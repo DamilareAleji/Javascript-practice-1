@@ -10,17 +10,24 @@
 
   <button onclick="
     
-    let firstRandomNumber = Math.random();
-
-    let secondRandomNumber = Math.random();
-
-    let firstDice = Math.floor(firstRandomNumber * 6) + 1;
-
-    let secondDice = Math.floor(secondRandomNumber * 6) + 1;
-
-    alert(`${firstDice} ${secondDice}`);
+    rollDice();
 
 
     ">Roll Dice</button>
+
+    <script>
+
+      function rollDice() {
+        let firstRandomNumber = Math.random();
+
+        let secondRandomNumber = Math.random();
+
+        let firstDice = Math.floor(firstRandomNumber * 6) + 1;
+
+        let secondDice = Math.floor(secondRandomNumber * 6) + 1;
+
+        alert(`${firstDice} ${secondDice}`);
+      }
+    </script>
 </body>
 </html>
