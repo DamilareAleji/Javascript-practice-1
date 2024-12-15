@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+
+  <style>
+
+    body {
+      background-color: rgb(15, 15, 15);
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      width: 250px;
+      margin: 0 auto;
+      row-gap: 20px;
+      margin-bottom: 100px;
+    }
+
+    .number-button, .symbol-button, .clear-button {
+      background-color: rgb(51, 51, 51);
+      color: white;
+      font-weight: bold;
+      width: 50px;
+      height: 50px;
+      font-size: 25px;
+      padding: 15px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .operator-button {
+      background-color: rgb(253,160,10);
+      color: white;
+      font-weight: bold;
+      width: 50px;
+      height: 50px;
+      font-size: 25px;
+      padding: 15px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+    }
+
+    .clear-button {
+      font-size: 14px;
+    }
+
+    .output {
+      color: white;
+      margin: 150px auto 30px;
+      text-align: center;
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <p class="output">Output</p>
+  
+
+  <div class="container">
+    <div><button class="calculator-button number-button">1</button></div>
+    <div><button class="calculator-button number-button">2</button></div>
+    <div><button class="calculator-button number-button">3</button></div>
+    <div><button class="calculator-button operator-button">+</button></div>
+    <div><button class="calculator-button number-button">4</button></div>
+    <div><button class="calculator-button number-button">5</button></div>
+    <div><button class="calculator-button number-button">6</button></div>
+    <div><button class="calculator-button operator-button">-</button></div>
+    <div><button class="calculator-button number-button">7</button></div>
+    <div><button class="calculator-button number-button">8</button></div>
+    <div><button class="calculator-button number-button">9</button></div>
+    <div><button class="calculator-button operator-button">*</button></div>
+    <div><button class="calculator-button number-button">0</button></div>
+    <div><button class="calculator-button symbol-button">.</button></div>
+    <div><button class="calculator-button symbol-button">=</button></div>
+    <div><button class="calculator-button operator-button">/</button></div>
+    <div><button class="calculator-button clear-button">clear</button></div>
+    
+  </div>
+
+
+  <script>
+
+
+  </script>
+</body>
+</html>
