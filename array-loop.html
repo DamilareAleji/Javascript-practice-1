@@ -9,16 +9,46 @@
   
 
 
+  <p>To do list</p>
+
+  <input type="text" class="js-to-do-list" placeholder="Make your list" onkeydown="">
+
+  <button onclick=" addItem(); ">Add</button>
+
+
   <script>
 
-    const arrayData = [1, 1, 3];
-    let sum = 0;
+    /* const arrayData = [1, 1, 3];
+    let newArrayData = [];
 
     for (let i = 0; i < arrayData.length; i++) {
-      sum += arrayData[i];
+      num = arrayData[i] * 2;
+      newArrayData.push(num);
     }
 
-    console.log(sum);
+    console.log(newArrayData); */
+
+
+    
+
+    let toDoArray = [];
+
+    const inputElement = document.querySelector('.js-to-do-list');
+
+    function addItem() {
+      toDoArray.push(inputElement.value);
+      console.log(toDoArray);
+
+      inputElement.value = '';
+    }
+
+
+    inputElement.addEventListener("keydown", function (e) {
+      if (e.key === 'Enter') {
+        addItem();
+      }
+    })
+
   </script>
 </body>
 </html>
